@@ -20,6 +20,7 @@ from the Human Activity Recognition Using SmartPhones Data Set found on the UCI 
 REFERENCE: readme.txt from [Human Activity Recognition Using SmartPhones Data Set] (http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip)
 
 
+
 the script first checks if all the necessary text files from the dataset are in the working directory.
 
 if any of the files are missing, the script will unzip it from the zip file getdata-projectfiles-UCI HAR Dataset.zip.
@@ -43,9 +44,11 @@ dataframe y_test is used  to cross reference the  activity description from data
 
 Repeat Steps 1 and 4 above for the training dataset.
 
-a tidied dataset "tidy" is created by appending the training measurements "X_train" to the test measurements "X_test"
-a 2nd dataset "tidy_agg" is created with the average of each activity and each subject from the dataframe "tidy".
-the dataset "tidy_agg" is written to a text file "tidy_agg.txt" in the current working directory.
+A tidied dataset "tidy" is created by appending the training measurements "X_train" to the test measurements "X_test".
+
+A 2nd dataset "tidy_agg" is created with the average of each activity and each subject from the dataframe "tidy".
+
+The dataset "tidy_agg" is written to a text file "tidy_agg.txt" in the current working directory.
 
 
 
