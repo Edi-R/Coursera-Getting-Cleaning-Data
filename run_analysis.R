@@ -78,6 +78,7 @@ tidy<-rbind(X_test,X_train)
 
 # create a new tidy dataset with the average of each variable, grouped by Activity and Subject
 tidy_agg<-aggregate(.~Subject+Activity,tidy,mean) 
+names(tidy_agg)[3:68] <- paste("AvgOf",names(tidy_agg)[3:68],sep="_")
 
 # write the data set to a text file
 write.table(tidy_agg,file="tidy_agg.txt",row.names=F)
