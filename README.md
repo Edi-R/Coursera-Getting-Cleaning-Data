@@ -47,6 +47,7 @@ Repeat Steps 1 and 4 above for the training dataset.
 A tidied dataset "tidy" is created by appending the training measurements "X_train" to the test measurements "X_test".
 
 A 2nd dataset "tidy_agg" is created with the average of each activity and each subject from the dataframe "tidy".
+Prefix the measurement variable names with "AvgOf_" to differentiate from the variable names in the original datasets.
 
 The dataset "tidy_agg" is written to a text file "tidy_agg.txt" in the current working directory.
 
